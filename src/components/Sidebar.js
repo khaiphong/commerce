@@ -39,8 +39,8 @@ const ToggleButton = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 16px;
-  width: 18px;
+  height: 18px;
+  width: 21px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -102,7 +102,6 @@ const Sidebar = () => {
           <p>Commerce</p>
           <MenuBars>
             <ToggleButton >
-              <ToggleLine />
               <ToggleLine />
               <ToggleLine />
             </ToggleButton>
