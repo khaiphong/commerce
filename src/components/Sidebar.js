@@ -53,7 +53,7 @@ const ToggleLine = styled.div`
   background: white;
 `;
 
-export const OmLink = styled(Link)`
+export const ServiceLink = styled(Link)`
   color: white;
   font-size: 1rem;
   display: flex;
@@ -68,6 +68,10 @@ export const OmLink = styled(Link)`
     left: 25px;
   }
 `;
+// goto Pdb for required serviceAlerts action or delete
+const serviceAlerts = () => {
+
+};
 const Spacer = styled.div`
   flex: 1;
 `;
@@ -96,7 +100,9 @@ const Sidebar = () => {
   return (
     <>
       <Nav>
-        <OmLink to='#'>Alert from Commerce 50 characters</OmLink>
+        <ServiceLink to='#' onClick={serviceAlerts} >
+            You have 5 alerts waiting to take actions.
+        </ServiceLink>
         <Spacer />
         <NavIcon to='#' onClick={showSidebar} >
           <p>Commerce</p>
